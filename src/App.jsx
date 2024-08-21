@@ -1,23 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import { userNames } from './components/nameList';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [names, setNames] = useState(userNames);
+
 
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <h1>Woodland Name Generator</h1>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Here's a paragraph ~
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
