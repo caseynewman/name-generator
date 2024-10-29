@@ -5,6 +5,7 @@ export default function Generator() {
 
     const [generatedFirstName, setGeneratedFirstName] = useState('');
     const [generatedSecondName, setGeneratedSecondName] = useState('');
+    const [copied, setCopied] = useState(false);
 
     const firstNames = [
         'glittering', 'sparkling', 'dewey',
@@ -15,6 +16,18 @@ export default function Generator() {
         'treebeard', 'fawn', 'flora', 'fauna',
         'raindrops', 'dewdrops'
     ]
+
+    function generate() {
+        const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+        const randomSecondName = secondNames[Math.floor(Math.random() * secondNames.length)];
+        setGeneratedFirstName(randomFirstName);
+        setGeneratedSecondName(randomSecondName);
+        setCopied(false);
+    }
+
+    function copy() {
+        
+    }
 
     return (
         <>
