@@ -1,17 +1,21 @@
 import { useState } from 'react'
 import './App.css'
-import { userNames } from './components/nameList';
+import Generator from './components/Generator';
 
 function App() {
-  const [names, setNames] = useState(userNames);
-
 
   return (
     <>
-      <h1>Woodland Name Generator</h1>
-        <p>
-          Here's a paragraph ~
-        </p>
+      <header>
+        <h1>Woodland Name Generator</h1>
+      </header>
+      <main>
+        <Generator />
+      </main>
+      <footer>
+
+      </footer>
+
     </>
   )
 }

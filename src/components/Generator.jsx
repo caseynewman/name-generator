@@ -25,13 +25,21 @@ export default function Generator() {
         setCopied(false);
     }
 
-    function copy() {
-        
+    function printName() {
+        const fullName = `${generatedFirstName} ${generatedSecondName}`
+        console.log(fullName)
     }
 
     return (
-        <>
-        
-        </>
+        <div className='name-container'>
+            <h2>Find your woodland name</h2>
+            <button className='my-button' onClick={generate}>
+                Generate Name
+            </button>
+            <p className="generated-name"> 
+                Your name is: 
+                {`${generatedFirstName} ${generatedSecondName}`} 
+            </p>
+        </div>
     )
 }
