@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Generator from './components/Generator';
+import Generator from './components/Generator/Generator';
 
 function App() {
 
