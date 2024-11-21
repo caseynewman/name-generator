@@ -1,0 +1,18 @@
+.my-button {
+    width: 230px;
+    height: 35px;
+    background-color: #9a5a43;
+    border: 1px solid #000;
+    font-family: 'freight-display-pro', serif;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.my-button:hover {
+    background-color: #ce794c;
+    color: #000;
+    transition: .5s;
+    cursor: pointer;
+}

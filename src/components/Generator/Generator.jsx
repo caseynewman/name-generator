@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './style.css'
+import MyButton from '../Button';
 
 export default function Generator() {
 
@@ -33,9 +34,9 @@ export default function Generator() {
     return (
         <div className='name-container'>
             <h2>Find your woodland name</h2>
-            <button className='my-button' onClick={generate}>
+            <MyButton onClick={generate}>
                 Generate Name
-            </button>
+            </MyButton>
             <p className="generated-name"> 
                 Your name is: 
                 {`${generatedFirstName} ${generatedSecondName}`} 
