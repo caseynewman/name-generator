@@ -38,7 +38,7 @@ export default function Generator() {
                 Generate Name
             </MyButton>
             <p className="generated-name"> 
-                Your name is: 
+                Your name is:<br />
                 {`${generatedFirstName} ${generatedSecondName}`} 
             </p>
         </div>
