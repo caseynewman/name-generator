@@ -6,6 +6,7 @@ export default function Generator() {
 
     const [generatedFirstName, setGeneratedFirstName] = useState('');
     const [generatedSecondName, setGeneratedSecondName] = useState('');
+    const [generatedPrepPhrase, setGeneratedPrepPhrase] = useState('');
     const [copied, setCopied] = useState(false);
 
     const firstNames = [
@@ -18,11 +19,15 @@ export default function Generator() {
         'raindrops', 'dewdrops'
     ]
 
+    const prepPhrase = 'of the ';
+
     function generate() {
         const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];
         const randomSecondName = secondNames[Math.floor(Math.random() * secondNames.length)];
+
         setGeneratedFirstName(randomFirstName);
         setGeneratedSecondName(randomSecondName);
+        setGeneratedPrepPhrase(prepPhrase);
         setCopied(false);
     }
 
@@ -39,7 +44,7 @@ export default function Generator() {
             </MyButton>
             <p className="generated-name"> 
                 Your name is:<br />
-                {`${generatedFirstName} ${generatedSecondName}`} 
+                {`${generatedFirstName} ${generatedSecondName} ${generatedPrepPhrase}`} 
             </p>
         </div>
     )
