@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 
 export default function Story({ storyData }) {
     const [currentScene, setCurrentScene] = useState('start');
