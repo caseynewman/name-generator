@@ -1,6 +1,5 @@
 
-
-export default function Option({ option, onClick }) {
+export default function CustomOption({ option, onClick }) {
 
     return (
         <button onClick={() => onClick(option.nextScene)}>{option.text}</button>

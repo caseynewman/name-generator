@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import CustomOption from '../CustomOption';
 
 export default function Story({ storyData }) {
     const [currentScene, setCurrentScene] = useState('start');
@@ -13,7 +14,7 @@ export default function Story({ storyData }) {
         <div>
             <p>{scene.text}</p>
             {scene.options.map((option, index) => (
-                <Option key={index} option={option} onClick={handleOptionClick} />
+                <CustomOption key={index} option={option} onClick={handleOptionClick} />
             ))}
         </div>
     )
