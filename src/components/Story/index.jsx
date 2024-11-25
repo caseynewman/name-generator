@@ -12,7 +12,7 @@ export default function Story({ storyData }) {
     return (
         <div>
             <p>{scene.text}</p>
-            {scene.option.man((option, index) => (
+            {scene.options.map((option, index) => (
                 <Option key={index} option={option} onClick={handleOptionClick} />
             ))}
         </div>
