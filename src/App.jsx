@@ -13,7 +13,7 @@ function App() {
       </header>
       <main>
         <Story storyData={storyData} />
-        <Generator />
+        {/* <Generator /> */}
       </main>
       <footer>
 
