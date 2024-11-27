@@ -1,4 +1,4 @@
-import MyButton from "../Button";
+import MyButton from '../Button';
 
 export default function CustomOption({ option, onClick }) {
 

@@ -3,3 +3,10 @@
     width: 600px;
     background-color: #fff;
 }
+
+.story-container button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
