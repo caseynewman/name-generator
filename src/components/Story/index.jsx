@@ -13,10 +13,12 @@ export default function Story({ storyData }) {
 
     return (
         <div className='story-container'>
-            <p>{scene.text}</p>
-            {scene.options.map((option, index) => (
-                <CustomOption key={index} option={option} onClick={handleOptionClick} />
-            ))}
+            <h2>{scene.text}</h2>
+            <div className='scene-selections'>
+                {scene.options.map((option, index) => (
+                    <CustomOption key={index} option={option} onClick={handleOptionClick} />
+                ))}
+            </div>
         </div>
     )
 }
