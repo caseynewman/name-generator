@@ -24,10 +24,10 @@
     cursor: pointer;
     text-transform: none;
     text-align: left;
-    height: 100px;
+    height: 100%;
 }
 
 .story-container button:hover {
     background-color: transparent;
-    color: #ce794c;
+    color: #9a5a43;
 }
