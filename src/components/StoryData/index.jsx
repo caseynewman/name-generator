@@ -16,7 +16,12 @@ export const storyData = {
         ]
     },
     meadow: {
-
+        id: 3,
+        text: 'you see butterflies. do you follow them?',
+        options: [
+            { text: 'yes', nextScene: 'find a stream' },
+            { text: 'no', nextScene: 'you see a path' },
+        ]
     }
 };
 //more questions
