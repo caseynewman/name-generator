@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Woodland Name Generator</h1>
+        <h1>Explore the Forest</h1>
       </header>
       <main>
         <Story storyData={storyData} />
