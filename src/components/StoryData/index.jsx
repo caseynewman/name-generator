@@ -1,22 +1,31 @@
 export const storyData = {
     start: {
         id: 1,
-        text: "You're standing at the edge of a forest...",
+        text: "You're standing at the edge of a forest. Vines wrap around branches that create an arched opening into the woods. Behind you lies a bright meadow. Where are you heading?",
         options: [
-            { text: "You go in", nextScene: 'goIn' },
-            { text: "You turn around and head toward the meadow", nextScene: 'meadow' },
+            { text: "You walk confidently into the forest", nextScene: 'goIn' },
+            { text: "You turn around and run toward the meadow", nextScene: 'meadow' },
         ],
     },
     goIn: {
         id: 2,
-        text: "text",
+        text: "The light dims and air cools as soon as you step into the forest. You walk forward and see two separate paths lying ahead. The path to the left is dark - did a bat just fly by? In the path to the right, the sun peeks through the trees and birds are chirping.",
         options: [
-            { text: "texxxxxt", nextScene: 'darkPath' },
-            { text: "more text", nextScene: 'sunnyPath' },
+            { text: "You take a deep breath and head to the left. This is meant to be an adventure after all.", nextScene: 'darkPath' },
+            { text: "You're more of a 'take a stroll and listen to the birds chirping' kind of explorer. You head to the right.", nextScene: 'sunnyPath' },
+            { text: "You're not really a path kind of folk anyway - you decide to skip them both and head straight into the trees.", nextScene: 'trees' },
+        ]
+    },
+    darkPath: {
+        id: 3,
+        text: "A bat immediately flies right into your head. After a quick reset, you're fine.....",
+        options: [
+            { text: 'yes', nextScene: 'find a stream' },
+            { text: 'no', nextScene: 'you see a path' },
         ]
     },
     meadow: {
-        id: 3,
+        id: 55555,
         text: 'you see butterflies. do you follow them?',
         options: [
             { text: 'yes', nextScene: 'find a stream' },
