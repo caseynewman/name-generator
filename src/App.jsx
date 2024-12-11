@@ -3,6 +3,7 @@ import './App.css'
 import Generator from './components/Generator/Generator';
 import Story from './pages/Story';
 import { storyData } from './components/StoryData';
+import { Outlet } from 'react-router-dom';
 import GameStart from './pages/GameStart';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         <h1>Take A Walk to Find Yourself</h1>
       </header>
       <main>
-        <GameStart />
+        <Outlet />
         {/* <Story storyData={storyData} /> */}
         {/* <Generator /> */}
       </main>

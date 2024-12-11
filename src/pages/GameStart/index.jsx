@@ -1,9 +1,11 @@
 import MyButton from '../../components/Button';
+import { Link, useLocation } from 'react-router-dom';
 import Story from '../Story'
 import { storyData } from '../../components/StoryData'
 import './style.css'
 
 export default function GameStart() {
+    const currentPage = useLocation().pathname;
 
     return (
         <div className='game-container'>
