@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Generator from './components/Generator/Generator';
-import Story from './components/Story';
+import Story from './pages/Story';
 import { storyData } from './components/StoryData';
 import GameStart from './pages/GameStart';
 

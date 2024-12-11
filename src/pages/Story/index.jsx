@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CustomOption from '../CustomOption';
+import CustomOption from '../../components/CustomOption';
 import './style.css';
 
 export default function Story({ storyData }) {
