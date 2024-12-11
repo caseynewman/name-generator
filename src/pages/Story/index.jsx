@@ -1,22 +1,35 @@
 import { useState } from 'react';
+import { storyData } from '../../components/StoryData';
 import CustomOption from '../../components/CustomOption';
 import './style.css';
 
-export default function Story({ storyData }) {
-    const [currentScene, setCurrentScene] = useState('start');
+export default function Story() {
+    const [currentSceneId, setCurrentSceneId] = useState('start');
 
-    const handleOptionClick = (nextScene) => {
-        setCurrentScene(nextScene);
+    const handleOptionClick = (nextSceneId) => {
+        setCurrentSceneId(nextSceneId);
     };
 
-    const scene = storyData[currentScene];
+    const currentScene = storyData.find(scene => scene.id === currentSceneId);
+
+    if (!currentScene) {
+        return (
+            <div className="story-container">
+                <h2>Scene not found</h2>
+                <p>Oops! Something went wrong.</p>
+            </div>
+        );
+    }
 
     return (
         <div className='story-container'>
-            <h2>{scene.text}</h2>
+            <h2>{currentScene.text}</h2>
             <div className='scene-selections'>
-                {scene.options.map((option, index) => (
-                    <CustomOption key={index} option={option} onClick={handleOptionClick} />
+                {currentScene.options.map((option, index) => (
+                    <CustomOption
+                    key={index}
+                    option={option}
+                    onClick={() => handleOptionClick(option.nextSceneId)} />
                 ))}
             </div>
         </div>
