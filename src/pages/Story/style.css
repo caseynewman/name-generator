@@ -28,6 +28,7 @@
     text-align: left;
     height: 100%;
     width: auto;
+    line-height: 1.5;
 }
 
 .story-container button:hover {
