@@ -2,9 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Generator from './components/Generator/Generator';
 import Story from './pages/Story';
-import { storyData } from './components/StoryData';
 import { Outlet } from 'react-router-dom';
-import GameStart from './pages/GameStart';
 
 function App() {
 
