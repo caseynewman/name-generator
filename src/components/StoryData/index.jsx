@@ -25,6 +25,22 @@ export const storyData = [
         ]
     },
     {
+        id: 'sunnyPath',
+        text: '',
+        options: [
+            { text: '', nextSceneId: '' },
+            { text: '', nextSceneId: '' },
+        ]
+    },
+    {
+        id: 'trees',
+        text: '',
+        options: [
+            { text: '', nextSceneId: '' },
+            { text: '', nextSceneId: '' },
+        ]
+    },
+    {
         id: 'meadow',
         text: 'you see butterflies. do you follow them?',
         options: [
